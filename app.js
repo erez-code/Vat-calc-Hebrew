@@ -10,7 +10,7 @@ function startup() {
 	}
 		else {
 //run calculation
-	var myResault1 = $("#wholeForCalc1").val() * [100 + parseInt($("#percentForCalc1").val()) ] /100;
+	var myResault1 = $("#wholeForCalc1").val() * [100 + parseFloat($("#percentForCalc1").val()) ] /100;
 	$("#displayResault1").html(' המחיר בתוספת מע"מ הוא: ' + myResault1.toFixed(2)+ ' ש"ח.' )}
 	});
 
@@ -34,7 +34,7 @@ function startup() {
 	}
 		else {
 //run calculation
-	var myResault3 = $("#partForCalc3").val() *100 / [100 + parseInt($("#percentForCalc3").val()) ];
+	var myResault3 = $("#partForCalc3").val() *100 / [100 + parseFloat($("#percentForCalc3").val()) ];
 	$("#displayResault3").html('המחיר לא כולל מע"מ הוא: ' + myResault3.toFixed(2) + ' ש"ח.')}
 	});
 }
